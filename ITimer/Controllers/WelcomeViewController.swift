@@ -5,7 +5,7 @@ class WelcomeViewController: UIViewController {
 
     @IBOutlet weak var ITimerLabel: UITextField!
     
-    
+    //MARK: - HiddenNavBar
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.isNavigationBarHidden = true
@@ -15,7 +15,7 @@ class WelcomeViewController: UIViewController {
         super.viewWillDisappear(animated)
         navigationController?.isNavigationBarHidden = false
     }
-    
+    //MARK: - StartScreen
     override func viewDidLoad() {
         super.viewDidLoad()
         ITimerLabel.text = ""
@@ -29,7 +29,7 @@ class WelcomeViewController: UIViewController {
         }
     }
 }
-
+    //MARK: - StringContains
 extension String {
    var containsSpecialCharacter: Bool {
       let regex = ".*[^A-Za-z0-9].*"

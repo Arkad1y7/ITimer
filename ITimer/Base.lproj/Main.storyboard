@@ -134,7 +134,7 @@
                                 <color key="tintColor" systemColor="systemCyanColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Login">
-                                    <fontDescription key="titleFontDescription" name="AcademyEngravedLetPlain" family="Academy Engraved LET" pointSize="20"/>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="LoginButtonPressed:" destination="wb6-c4-OAO" eventType="touchUpInside" id="aAG-SO-sZP"/>
@@ -218,37 +218,18 @@
                                 <rect key="frame" x="60" y="194.33333333333337" width="273" height="194"/>
                                 <color key="tintColor" systemColor="systemCyanColor"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="figure.water.fitness" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="VKh-SH-9Cr">
-                                <rect key="frame" x="218" y="589" width="159" height="155.66666666666663"/>
-                                <color key="tintColor" systemColor="systemCyanColor"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" verticalHuggingPriority="251" image="figure.waterpolo" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="KVP-dx-0GD">
-                                <rect key="frame" x="16" y="589.33333333333337" width="159" height="155"/>
-                                <color key="tintColor" systemColor="systemCyanColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="157.66666666666674" id="LZA-St-vpw"/>
-                                    <constraint firstAttribute="width" constant="159" id="Z2f-9u-Rw0"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ghe-AB-Z6S"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="KVP-dx-0GD" firstAttribute="centerY" secondItem="VKh-SH-9Cr" secondAttribute="centerY" id="4nh-bQ-TQt"/>
                             <constraint firstItem="o7H-ZX-bR6" firstAttribute="leading" secondItem="ghe-AB-Z6S" secondAttribute="leading" constant="60" id="5Zh-xh-I5B"/>
                             <constraint firstItem="ghe-AB-Z6S" firstAttribute="trailing" secondItem="gMj-Fl-tOq" secondAttribute="trailing" constant="138" id="90Y-bu-cPJ"/>
                             <constraint firstItem="YEB-D4-vhy" firstAttribute="top" secondItem="o7H-ZX-bR6" secondAttribute="bottom" constant="8.3300000000000001" id="AQ8-ux-E9x"/>
                             <constraint firstItem="gMj-Fl-tOq" firstAttribute="top" secondItem="YEB-D4-vhy" secondAttribute="bottom" constant="21.329999999999998" id="ATi-T1-8SR"/>
-                            <constraint firstItem="KVP-dx-0GD" firstAttribute="leading" secondItem="Ih5-5q-7gu" secondAttribute="leadingMargin" id="B5b-2o-yKm"/>
                             <constraint firstItem="ghe-AB-Z6S" firstAttribute="trailing" secondItem="o7H-ZX-bR6" secondAttribute="trailing" constant="60" id="Icz-9V-etg"/>
-                            <constraint firstItem="VKh-SH-9Cr" firstAttribute="leading" secondItem="KVP-dx-0GD" secondAttribute="trailing" constant="43" id="KzU-Kl-xUM"/>
-                            <constraint firstItem="VKh-SH-9Cr" firstAttribute="top" secondItem="gMj-Fl-tOq" secondAttribute="bottom" constant="92" id="R0y-pv-mFv"/>
                             <constraint firstItem="gMj-Fl-tOq" firstAttribute="leading" secondItem="ghe-AB-Z6S" secondAttribute="leading" constant="137" id="UZV-Ts-FzA"/>
-                            <constraint firstItem="VKh-SH-9Cr" firstAttribute="trailing" secondItem="ghe-AB-Z6S" secondAttribute="trailing" constant="-16" id="bCj-8f-Ifv"/>
                             <constraint firstItem="o7H-ZX-bR6" firstAttribute="top" secondItem="ghe-AB-Z6S" secondAttribute="top" constant="90" id="e9y-CD-bKk"/>
                             <constraint firstItem="ghe-AB-Z6S" firstAttribute="bottom" secondItem="o7H-ZX-bR6" secondAttribute="bottom" constant="427.32999999999998" id="eRj-g7-0rk"/>
-                            <constraint firstItem="ghe-AB-Z6S" firstAttribute="bottom" secondItem="KVP-dx-0GD" secondAttribute="bottom" constant="72.333333333333144" id="fAA-2F-qwA"/>
-                            <constraint firstItem="KVP-dx-0GD" firstAttribute="top" secondItem="gMj-Fl-tOq" secondAttribute="bottom" constant="93.000000000000114" id="fkR-ia-hCq"/>
                             <constraint firstItem="ghe-AB-Z6S" firstAttribute="trailing" secondItem="YEB-D4-vhy" secondAttribute="trailing" constant="95" id="kTO-IR-Xhe"/>
                             <constraint firstItem="YEB-D4-vhy" firstAttribute="leading" secondItem="ghe-AB-Z6S" secondAttribute="leading" constant="95" id="krI-QO-yv4"/>
                         </constraints>
@@ -296,7 +277,7 @@
                                 <color key="tintColor" systemColor="systemCyanColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Register">
-                                    <fontDescription key="titleFontDescription" name="AcademyEngravedLetPlain" family="Academy Engraved LET" pointSize="20"/>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="RegisterButtonPressed:" destination="KYa-CW-ui6" eventType="touchUpInside" id="Gnn-8B-0ED"/>
@@ -387,7 +368,6 @@
                                     <barButtonItem title="Logout" image="person.crop.circle.badge.xmark" catalog="system" id="0bp-68-NhY">
                                         <connections>
                                             <action selector="LogOutPressed:" destination="de3-fl-tXS" id="j5v-mq-RWN"/>
-                                            <segue destination="AMU-5O-rGk" kind="show" identifier="LogOut" id="Ybi-tb-6Na"/>
                                         </connections>
                                     </barButtonItem>
                                 </barButtonItems>
@@ -405,8 +385,6 @@
         <segue reference="Owe-ky-c4x"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="figure.water.fitness" catalog="system" width="128" height="88"/>
-        <image name="figure.waterpolo" catalog="system" width="128" height="95"/>
         <image name="pencil.and.outline" catalog="system" width="128" height="128"/>
         <image name="person.crop.circle" catalog="system" width="128" height="123"/>
         <image name="person.crop.circle.badge.xmark" catalog="system" width="128" height="114"/>

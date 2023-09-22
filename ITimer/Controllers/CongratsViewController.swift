@@ -3,7 +3,6 @@ import Foundation
 import UIKit
 
 class CongratsViewController: UIViewController {
-    let constant = Constants()
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -14,8 +13,8 @@ class CongratsViewController: UIViewController {
         super.viewWillDisappear(animated)
         navigationController?.isNavigationBarHidden = false
     }
-    
+    //MARK: - StartButton Pressed
     @IBAction func StartButtonPressed(_ sender: Any) {
-        self.performSegue(withIdentifier: constant.doneToMainSegue, sender: self)
+        self.performSegue(withIdentifier: SegueConstants.shared.doneToMainSegue, sender: self)
     }
 }
